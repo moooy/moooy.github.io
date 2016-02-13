@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
+
+<head>
+  <title>Blueprint官方文档翻译 | Hexo</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="Hexo">
+    <meta name="author" content="John Doe">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
+</head>
+
+<!--
+<body class="post-template">
+-->
+<body id="index" class="lightnav animsition">
+
+      <!-- ============================ Off-canvas navigation =========================== -->
+
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
+        </div>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+        	<li>
+        		<a class="sb-toggle-submenu">Categories<span class="sb-caret"></span></a>
+            	<ul class="sb-submenu">
+				  	
+				    <li><a href="/categories/OSGI/" class="animsition-link">OSGI<small>(1)</small></a></li>
+				    
+				    <li><a href="/categories/eclipse/" class="animsition-link">eclipse<small>(2)</small></a></li>
+				    
+				    <li><a href="/categories/综合/" class="animsition-link">综合<small>(3)</small></a></li>
+				    
+				</ul>
+        	</li>
+			
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="http://go.kieran.top/" class="animsition-link">Kieran</a></li>
+                    
+                    <li><a href="http://domain.com/" class="animsition-link">Name</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
+    
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">Hexo</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
+            </div>
+            <!-- // .navbar-inner -->
+        </div>
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2>YOU'VE MADE A <span>BRAVE</span> DECISION, WELCOME.</h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p>每一个不曾起舞的日子都是对生命的辜负。</p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
+            </div>
+        </section>
+
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      
+<section id="intro">
+    <div class="container">
+        <div class="row col-md-offset-2">
+            <div class="col-md-8">
+    			<span class="post-meta">
+      <time datetime="2016-02-13T03:07:50.801Z" itemprop="datePublished">
+          2016-02-13
+      </time>
+    
+    
+    | 
+    <a href='/tags/OSGI-Blueprint/'>OSGI Blueprint</a>
+    
+    
+</span>
+                <h1>Blueprint官方文档翻译</h1>
+            </div>
+        </div>
+        <div class="col-md-8 col-md-offset-2">
+      		<ul>
+<li><a href="#P1">介绍</a></li>
+<li><a href="#P2">Blueprint Bundles</a>  </li>
+<li><a href="#P3">Blueprint XML</a></li>
+<li><a href="#P4">Beans</a></li>
+<li><a href="#P5">Services</a></li>
+<li><a href="#P6">References</a></li>
+</ul>
+<p><div id="P1"></div></p>
+<p><pre><br>介绍<br></pre><br></p>
+<blockquote>
+<p>Blueprint为OSGI提供了依赖注入框架，并且被OSGI联盟在OSGI规范R4.2版本中进行了标准化。Blueprint设计的目的是为了处理OSGI的动态特性，在OSGI内服务可以在任何时刻可用或不可用。Blueprint规范的设计POJOs进行协作使得在JSE环境下简单组件的实现和进行单元测试不需要知道这些组件是如何组装在一起的。在Blueprint编程模型中Blueprint XML文件是关键，用来定义和描述多个组件的组装。OSGI的BlueContainer规范描述了组件是如何组装和连接在一起来形成一个运行时模块的。<br>以下文档覆盖了Blueprint的80：20(?)的使用.更多的细节，请参阅OSGI规范的R4.2版本。</p>
+</blockquote>
+<p><div id="P2"></div></p>
+<p><pre><br>Blueprint Bundles<br></pre><br></p>
+<blockquote>
+<p>Blueprint Container规范使用了扩展者模式，即有一个扩展者的bundle在时刻监视着OSGI框架上所有bundle的状态并且根据这些bundle的不同状态来进行不同的动作响应。Blueprint Extender bundle 已知在等待bundles被激活，然后检查这些bundles是不是Blueprint bundle。一个bundle被认为是Blueprint bundle 当这个bundle内存在一个或多个Blueprint XML文件。这些文件的存储位置默认是在OSGI-INF/blueprint 文件夹下或者通过Bundle-Blueprint的manifest header来进行指定。<br>一旦扩展者确定一个bundle是Blueprint bundle，他就创建一个Blueprint Container来代替这个bundle。这个Blueprint Container负责：</p>
+<p><li>解析Blueprint XML文件</li></p>
+<p><li>实例化所有的组件</li></p>
+<p><li>连接所有的组件</li></p>
+<p><li>注册服务</li></p>
+<p><li>查找服务的引用</li><br>在初始化期间，Blueprint Container确保服务的引用是满足的，然后注册所有的服务到OSGI的服务注册表中去，并创建初始化的组件实例。Blueprint extender bundle在bundles停止时负责销毁一个bundle相对应的Blueprint Container。</p>
+</blockquote>
+<p><div id="P3"></div></p>
+<p><pre><br>Blueprint XML<br></pre><br></p>
+<blockquote>
+<p>Blueprint XML文件被一个”blueprint”的顶层元素所标识，如下所示<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#60;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&#62;&#10;&#62;```  &#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></blueprint></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;XML&#30340;&#21629;&#21517;&#31354;&#38388;&#35782;&#21035;blueprint XML&#25991;&#26723;&#22240;&#20026;&#36825;&#20010;&#25991;&#26723;&#36981;&#24490;Blueprint version 1.0.0&#12290;&#39030;&#32423;&#30340;&#20803;&#32032;&#60;blueprint\&#62;&#26631;&#35782;&#36825;&#20010;&#25991;&#26723;&#20026;&#19968;&#20010;Blueprint &#27169;&#22359;&#30340;&#23450;&#20041;&#10;&#10;&#60;div id=&#34;P4&#34;&#62;&#10;&#60;pre&#62;&#10;Beans&#10;&#60;/pre&#62;&#10;&#60;/div&#62;&#10;&#62;Beans &#34987;&#25551;&#36848;&#36890;&#36807;&#60;bean\&#62;&#20803;&#32032;&#65292;&#19979;&#38754;&#30340;&#20363;&#23376;&#23450;&#20041;&#20102;&#19968;&#20010;&#21483;accountOne&#21333;&#19968;&#30340;bean,&#36890;&#36807;POJO&#31867;org.apache.aries.simple.Account  &#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p>&lt;?xml version=”1.0” encoding=”UTF-8”?&gt;<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></p>
+<p><blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></blueprint></p>
+<p><bean id="accountOne" class="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#62;Bean Construction  &#10;&#62;&#22312;&#23545;&#35937;&#21019;&#24314;&#26399;&#38388;&#65292;Blueprint Container&#24517;&#39035;&#20808;&#25214;&#21040;&#27491;&#30830;&#30340;constructor&#25110;&#19968;&#20010;&#24037;&#21378;&#26041;&#27861;&#65292;&#36825;&#20123;&#26500;&#36896;&#22120;&#25110;&#24037;&#21378;&#26041;&#27861;&#30340;&#21487;&#20860;&#23481;&#21442;&#25968;&#26159;&#21644;&#22312;XML&#25991;&#20214;&#20013;&#30340;&#60;argument\&#62;&#26159;&#30456;&#21305;&#37197;&#30340;&#12290;&#40664;&#35748;&#30340;&#65292;Blueprint Container&#26159;&#25353;&#29031;XML&#25991;&#20214;&#20013;&#60;argument\&#62;&#22768;&#26126;&#30340;&#39034;&#24207;&#21644;&#23427;&#25152;&#20351;&#29992;&#30340;&#25968;&#20540;&#26469;&#25214;&#21040;&#27491;&#30830;&#30340;&#26500;&#36896;&#22120;&#25110;&#26041;&#27861;&#12290;&#22914;&#26524;&#60;argument\&#62;&#20803;&#32032;&#19981;&#33021;&#21040;&#21442;&#25968;&#30340;&#39034;&#24207;&#65292;Blueprint Container&#20250;&#35797;&#22270;&#21435;&#23545;&#60;argument/&#62;&#30340;&#39034;&#24207;&#36827;&#34892;&#37325;&#25490;&#26469;&#25214;&#21040;&#21512;&#36866;&#30340;&#21305;&#37197;&#39034;&#24207;&#12290;  &#10;&#62;&#20026;&#20102;&#24110;&#21161;Bleuprint Container &#36873;&#25321;&#27491;&#30830;&#30340;&#26500;&#36896;&#22120;&#65292;&#26041;&#27861;&#65292;&#25110;&#21442;&#25968;&#23433;&#25490;&#65292;&#22312;&#60;argument\&#62;&#20803;&#32032;&#20013;&#25351;&#23450;&#20102;&#39069;&#22806;&#30340;&#23646;&#24615;&#65292;&#31867;&#22914;Index&#25110;Type&#12290;&#20030;&#20010;&#20363;&#23376;&#65292;type&#23646;&#24615;&#25351;&#23450;&#20102;&#19968;&#20010;&#31867;&#29992;&#19968;&#20010;&#30830;&#20999;&#30340;type(&#31867;&#22411;)&#26469;&#23545;&#60;argument\&#62;&#36827;&#34892;&#21305;&#37197;&#21442;&#25968;&#12290;  &#10;&#62;&#19968;&#20010;bean&#21487;&#20197;&#36890;&#36807;&#19968;&#20010;&#31867;&#26500;&#36896;&#22120;&#26500;&#36896;&#65292;&#22312;&#19979;&#38754;&#30340;&#20363;&#23376;&#20013;&#65292;class &#23646;&#24615;&#25351;&#23450;&#20102;&#38656;&#35201;&#21435;&#23454;&#20363;&#21270;&#30340;java&#31867;&#21517;&#23383;&#12290;Blueprint container&#20250;&#21019;&#24314;Account&#23545;&#35937;&#36890;&#36807;&#20256;&#20837;1&#20316;&#20026;&#21442;&#25968;&#32473;&#26500;&#36896;&#22120;&#12290;  &#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class Account&#123;&#10;&#62;public Account(Long number)&#123;&#10;&#62; ...&#10;&#62;&#125;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="accountOne" class="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><argument value="1"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></argument></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#60;br&#62;&#10;&#62;&#62;bean&#21487;&#20197;&#36890;&#36807;&#19968;&#20010;&#38745;&#24577;&#24037;&#21378;&#31867;&#26469;&#36827;&#34892;&#21019;&#24314;&#12290;&#22312;&#36825;&#20010;&#20363;&#23376;&#20013;&#65292;class &#23646;&#24615;&#25351;&#23450;&#20102;&#21253;&#21547;&#19968;&#20010;&#38745;&#24577;&#24037;&#21378;&#26041;&#27861;&#30340;&#31867;&#21517;&#12290;&#36890;&#36807;factory-method&#23646;&#24615;&#26469;&#25351;&#23450;&#38745;&#24577;&#24037;&#21378;&#26041;&#27861;&#21517;&#12290;Blueprint Container&#20250;&#35843;&#29992;createAccount()&#38745;&#24577;&#26041;&#27861;&#22312;StaticAccountFactory&#31867;&#24182;&#23558;2&#20316;&#20026;&#21442;&#25968;&#20256;&#20837;&#26469;&#21019;&#24314;Account&#23545;&#35937;&#12290;&#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class StaticFactory&#123;&#10;&#62;public static Account creatAccount(Long number)&#123;&#10;&#62;return new Account(number);&#10;&#62;&#123;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="accountTwo" class="org.apache.aries.simple.Account" factory-method="createAccount"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;```  &#10;&#62;&#60;argument value=&#34;2&#34;&#62;&#10;&#62;```  &#10;&#62;```  &#10;&#62;&#60;/bean&#62;&#10;&#62;```  &#10;&#62;&#10;&#62;&#62;bean&#21487;&#20197;&#36890;&#36807;&#19968;&#20010;&#23454;&#20363;&#21270;&#30340;&#24037;&#21378;&#26041;&#27861;&#26469;&#36827;&#34892;&#21019;&#24314;&#65292;&#22312;&#19979;&#38754;&#30340;&#36825;&#20010;&#20363;&#23376;&#20013;&#65292;accountFactory bean&#26159;&#19968;&#20010;&#24037;&#21378;&#12290;Blueprint Container&#39318;&#20808;&#20250;&#21019;&#24314;&#19968;&#20010;AccountFactory&#23454;&#20363;&#36890;&#36807;&#23427;&#33258;&#24049;&#30340;&#21442;&#25968;&#21644;&#23646;&#24615;&#12290;&#22312;&#36825;&#20010;&#20363;&#23376;&#20013;&#65292;&#21482;&#26377;&#19968;&#20010;&#21442;&#25968;&#34987;&#25351;&#23450;&#65292;&#23601;&#26159;&#24037;&#21378;&#21517;factory name&#12290;Blueprint Container&#20250;&#35843;&#29992;AccountFactory&#20013;&#30340;createAccount()&#26041;&#27861;&#24182;&#23558;3&#20316;&#20026;&#21442;&#25968;&#20256;&#20837;&#21435;&#21019;&#24314;&#19968;&#20010;&#23454;&#20363;&#12290;&#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class AccountFactory&#123;&#10;&#62;public AccountFactory(String factoryName)&#123;&#125;&#10;&#62;pulic Account createAccount(Long number)&#123;return new Account(number)&#125;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><bean id="accountFactory" class="org.apache.aries.simple.AccountFactory"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><argument value="accout factory"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></argument></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="accountThree" factory-ref="accountFactory" factory-method="createAccount"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><argument values="3"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></argument></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#10;&#62;&#62;bean Properties  &#10;&#62;beans&#21487;&#20197;&#36827;&#34892;&#23646;&#24615;&#20540;&#30340;&#27880;&#20837;&#12290;bean&#34987;&#21019;&#24314;&#21518;&#23601;&#36827;&#34892;&#27880;&#20837;&#65292;&#20197;&#19979;&#30340;&#20363;&#23376;&#21019;&#24314;&#20102;&#19968;&#20010;Account bean&#65292;&#20043;&#21518;&#29992;&#21483;conventional&#30340;java beans&#26469;&#35774;&#32622;description&#23646;&#24615;&#12290;&#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class Account&#123;&#10;&#62;public Account(long number)&#123;...&#125;&#10;&#62;public String gerDescription()&#123;...&#125;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="accountOne" class="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><argument value="1"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></argument></p>
+<p><property name="description" value="#1 account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></property></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#10;&#62;&#62;bean Wiring  &#10;&#62;&#23646;&#24615;&#27880;&#20837;&#34987;&#29992;&#26469;&#36830;&#25509;beans&#22312;&#19968;&#36215;&#12290;&#22312;&#19979;&#38754;&#30340;&#20363;&#23376;&#20013;accountOne&#34987;&#27880;&#20837;&#19968;&#20010;Currency bean&#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class Account&#123;&#10;&#62;public Account()&#123;...&#125;&#10;&#62;public void serCurrency(Currency currency)&#123;&#125;&#10;&#62;&#125;&#10;&#62;public class Currency&#123;&#10;&#62; public Currency()&#123;...&#125;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="accountOne" class="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><property name="currency" ref="currency"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></property></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></p>
+<p><bean id="currency" class="org.apache.simple.Currency"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#60;div id=&#34;P5&#34;&#62;&#10;&#60;pre&#62;&#10;Services&#10;&#60;/pre&#62;&#10;&#60;/div&#62;&#10;&#62;&#22312;blueprint XML&#25991;&#20214;&#20013;&#65292;&#60;service&#62;&#20803;&#32032;&#23450;&#20041;&#20102;&#22312;OSGI service registry&#20013;&#27880;&#20876;&#19968;&#20010;&#26381;&#21153;&#12290;  &#10;&#62;bean&#25552;&#20379;&#26381;&#21153;&#23545;&#35937;&#21487;&#20197;&#36890;&#36807;ref&#23646;&#24615;&#26469;&#36827;&#34892;&#24341;&#29992;&#12290;&#26381;&#21153;&#21487;&#20197;&#36890;&#36807;interface&#23646;&#24615;&#26469;&#27880;&#20876;&#26381;&#21153;&#12290;&#10;&#62;&#60;pre&#62;&#10;&#62;&#60;code&#62;&#10;&#62;public class AccountImpl implements Account&#123;&#10;&#62; public Account()&#123;...&#125;&#10;&#62; public void setCurrency(Currency currency)&#123;&#125;&#10;&#62;&#125;&#10;&#62;&#60;/code&#62;&#10;&#62;&#60;/pre&#62;&#10;&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><service id="serviceOne" ref="account" interface="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></service></p>
+<p><bean id="account" class="org.apache.aries.simple.AccountImpl"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#10;&#62;bean&#21487;&#20197;&#20197;&#60;service/&#62;&#20803;&#32032;&#20869;&#32852;&#30340;&#26041;&#24335;&#26469;&#25552;&#20379;&#26381;&#21153;&#30340;&#23545;&#35937;&#65306;&#10;&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><service id="serviceTwo" interface="org.apache.aries.simple.Account"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></service></p>
+<p><bean class="org.apache.aries.simple.AccountImpl"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></bean></p>
+<p><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;&#10;&#62;&#19968;&#20010;&#26381;&#21153;&#36827;&#34892;&#27880;&#20876;&#36890;&#36807;&#22312;xml&#25991;&#20214;&#20013;&#20351;&#29992;auto-export&#23646;&#24615;&#26469;&#36827;&#34892;&#12290;&#19979;&#38754;&#23601;&#26159;&#22312;&#25152;&#26377;bean&#30340;&#25509;&#21475;&#19979;&#27880;&#20876;&#26381;&#21153;&#12290;&#10;&#62;</span><br></pre></td></tr></table></figure></p>
+<p><service id="serviceOne" ref="account" auto-export="interfaces"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#62;</span><br></pre></td></tr></table></figure></service></p>
+<p><bean id="account" class="org.apache.aries.simple.AccountImpl"><br>```  </bean></p>
+</blockquote>
+<p>####总结</p>
+<ul>
+<li>sdf</li>
+<li>sdfsdf</li>
+<li>sdfsd</li>
+<li>sdfsdf  </li>
+</ul>
+<p>###参考链接<br>1  <a href="">参考链接1</a><br>2  <a href="">参考链接2</a><br>3  <a href="">参考链接3</a> </p>
+
+            <div class="clearfix"></div>
+            <hr class="nogutter">
+        </div>
+        <nav class="pagination" role="pagination">
+    
+    <a class="pull-left" href="/2016/02/13/2015-12-5-けいかく/" style="float: left;">
+        ← Java RoadMap
+    </a>
+    
+    
+    <a class="pull-right" href="/2016/02/13/2015-10-26-jet/">
+        JET →
+    </a>
+    
+</nav>
+
+        <div class="duoshuo">
+<div class="ds-thread" data-thread-key="2016/02/13/2015-12-4-Apache blueprint/" data-title="Blueprint官方文档翻译" data-url="http://yoursite.com/2016/02/13/2015-12-4-Apache blueprint/"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"duoshuo_name"};
+(function() {
+	var ds = document.createElement('script');
+	ds.type = 'text/javascript';ds.async = true;
+	ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+	ds.charset = 'UTF-8';
+	(document.getElementsByTagName('head')[0] 
+	 || document.getElementsByTagName('body')[0]).appendChild(ds);
+})();
+</script>
+</div>
+    </div>
+</section>
+
+
+      
+<!-- ============================ Footer =========================== -->
+
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By John Doe. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
+        
+<!-- Resizable 'on-demand' full-height hero -->
+<script type="text/javascript">
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
+</script>
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
+
+</body>
+</html>
