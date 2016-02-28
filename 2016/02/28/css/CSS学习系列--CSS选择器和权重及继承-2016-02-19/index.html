@@ -30,7 +30,7 @@
 <link href="/css/main.css?v=0.4.5.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="UI,设计," />
+  <meta name="keywords" content="CSS," />
 
 
 
@@ -46,16 +46,34 @@
 
 
 
-<meta name="description">
+<meta name="description" content="样式表样式表是随着HTML的发明而出现的，不同的浏览器有着各自的不同的样式语言,读者使用样式语言来调节网页的显示方式。  
+
+样式表是HTML的发明的产物
+样式表的形式和样式语言是多种多样的。  
+
+CSS层叠样式表，Cascading Style Sheets的缩写，是一种样式表语言，用来描述HTML，XML文档的呈现。CSS描述怎么在屏幕，电子纸，音频，和其他媒体上渲染结构化元素。    
+C">
 <meta property="og:type" content="article">
-<meta property="og:title" content="(译)How to design websites that mirror how our eyes work">
-<meta property="og:url" content="http://yoursite.com/2016/02/15/设计网页的F-Patterns-2016-02-14/index.html">
+<meta property="og:title" content="CSS概述">
+<meta property="og:url" content="http://yoursite.com/2016/02/28/css/CSS学习系列--CSS选择器和权重及继承-2016-02-19/index.html">
 <meta property="og:site_name" content="moooy">
-<meta property="og:description">
-<meta property="og:updated_time" content="2016-02-15T06:53:02.182Z">
+<meta property="og:description" content="样式表样式表是随着HTML的发明而出现的，不同的浏览器有着各自的不同的样式语言,读者使用样式语言来调节网页的显示方式。  
+
+样式表是HTML的发明的产物
+样式表的形式和样式语言是多种多样的。  
+
+CSS层叠样式表，Cascading Style Sheets的缩写，是一种样式表语言，用来描述HTML，XML文档的呈现。CSS描述怎么在屏幕，电子纸，音频，和其他媒体上渲染结构化元素。    
+C">
+<meta property="og:updated_time" content="2016-02-19T13:38:42.177Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="(译)How to design websites that mirror how our eyes work">
-<meta name="twitter:description">
+<meta name="twitter:title" content="CSS概述">
+<meta name="twitter:description" content="样式表样式表是随着HTML的发明而出现的，不同的浏览器有着各自的不同的样式语言,读者使用样式语言来调节网页的显示方式。  
+
+样式表是HTML的发明的产物
+样式表的形式和样式语言是多种多样的。  
+
+CSS层叠样式表，Cascading Style Sheets的缩写，是一种样式表语言，用来描述HTML，XML文档的呈现。CSS描述怎么在屏幕，电子纸，音频，和其他媒体上渲染结构化元素。    
+C">
 
 
 
@@ -67,7 +85,7 @@
   };
 </script>
 
-  <title> (译)How to design websites that mirror how our eyes work | moooy </title>
+  <title> CSS概述 | moooy </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -206,7 +224,7 @@
             
             
               
-                (译)How to design websites that mirror how our eyes work
+                CSS概述
               
             
           </h1>
@@ -215,14 +233,14 @@
         <div class="post-meta">
           <span class="post-time">
             发表于
-            <time itemprop="dateCreated" datetime="2016-02-15T14:53:02+08:00" content="2016-02-15">
-              2016-02-15
+            <time itemprop="dateCreated" datetime="2016-02-28T09:47:06+08:00" content="2016-02-28">
+              2016-02-28
             </time>
           </span>
           <span class="post-time">
             | 修改于
-            <time itemprop="dateCreated" datetime="2016-02-15T14:53:02+08:00" content="2016-02-15">
-              2016-02-15
+            <time itemprop="dateCreated" datetime="2016-02-19T21:38:42+08:00" content="2016-02-19">
+              2016-02-19
             </time>
           </span>
 
@@ -231,8 +249,8 @@
               &nbsp; | &nbsp; 分类于
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/设计-UI/" itemprop="url" rel="index">
-                    <span itemprop="name">设计_UI</span>
+                  <a href="/categories/CSS系列/" itemprop="url" rel="index">
+                    <span itemprop="name">CSS系列</span>
                   </a>
                 </span>
 
@@ -260,7 +278,25 @@
       
 
       
-        <span itemprop="articleBody"></span>
+        <span itemprop="articleBody"><h3 id="u6837_u5F0F_u8868"><a href="#u6837_u5F0F_u8868" class="headerlink" title="样式表"></a>样式表</h3><p>样式表是随着HTML的发明而出现的，不同的浏览器有着各自的不同的样式语言,读者使用样式语言来调节网页的显示方式。  </p>
+<ul>
+<li>样式表是HTML的发明的产物</li>
+<li>样式表的形式和样式语言是多种多样的。  </li>
+</ul>
+<h3 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h3><p>层叠样式表，Cascading Style Sheets的缩写，是一种样式表语言，用来描述HTML，XML文档的呈现。CSS描述怎么在屏幕，电子纸，音频，和其他媒体上渲染结构化元素。    </p>
+<p>CSS的重要内容：</p>
+<ul>
+<li><h6>CSS文件的加载过程和解析</h6>  </li>
+<li><h6>浏览器的默认样式</h6>    </li>
+<li><h6>CSS样式来源和层叠规则</h6> </li>
+<li><h6>CSS的选择器和权重及集成(优先级)</h6></li>
+<li><h6>浏览器的页面呈现</h6></li>
+<li><h6>CSS布局</h6>   
+
+
+</li>
+</ul>
+</span>
       
     </div>
 
@@ -268,9 +304,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/UI/" rel="tag">#UI</a>
-          
-            <a href="/tags/设计/" rel="tag">#设计</a>
+            <a href="/tags/CSS/" rel="tag">#CSS</a>
           
         </div>
       
@@ -279,13 +313,17 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/02/13/hello-world/" rel="next" title="Hello World Test">
-                <i class="fa fa-chevron-left"></i> Hello World Test
+              <a href="/2016/02/28/css/CSS学习系列--CSS文件加载过程和解析-2016-02-19/" rel="next" title="CSS概述">
+                <i class="fa fa-chevron-left"></i> CSS概述
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/02/28/angular2/angular2 tooltip/" rel="prev" title="相关angular2实现提示">
+                相关angular2实现提示 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -353,21 +391,21 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">25</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
 
           <div class="site-state-item site-state-categories">
             <a href="/categories">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">11</span>
               <span class="site-state-item-name">分类</span>
               </a>
           </div>
 
           <div class="site-state-item site-state-tags">
             <a href="/tags">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">22</span>
               <span class="site-state-item-name">标签</span>
               </a>
           </div>
@@ -399,7 +437,7 @@
               
             
             
-              <p class="post-toc-empty">此文章未包含目录</p>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#u6837_u5F0F_u8868"><span class="nav-number">1.</span> <span class="nav-text">样式表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CSS"><span class="nav-number">2.</span> <span class="nav-text">CSS</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">CSS文件的加载过程和解析</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">浏览器的默认样式</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">CSS样式来源和层叠规则</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">CSS的选择器和权重及集成(优先级)</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.5.</span> <span class="nav-text">浏览器的页面呈现</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#undefined"><span class="nav-number">2.0.0.6.</span> <span class="nav-text">CSS布局</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
           <div class="post-toc-indicator-bottom post-toc-indicator">
